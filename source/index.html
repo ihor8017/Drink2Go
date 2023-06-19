@@ -11,9 +11,12 @@
       <nav class="header-navigation">
         <a class="header-navigation__logo logo">
           <picture>
-            <img class="logo-image">
+            <source media="(min-width: 1440px)" srcset="img/logo/logo-desktop.svg"  width="170" height="36">
+            <source media="(min-width: 768px)" srcset="img/logo/logo-tablet.svg" width="82" height="36">
+            <img class="logo__image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="32" height="36">
           </picture>
         </a>
+
         <ul class="header-navigation__list">
           <li class="header-navigation__item">
             <a class="header-navigation__link link header-navigation__link--current">Главная</a>
@@ -29,9 +32,12 @@
           </li>
         </ul>
         <a class="header-navigation__login">
-          <img class="header-navigation__login-image">
+          <span class="visually-hidden">Войти</span>
         </a>
-        <a class="header-navigation__cart-image"></a>
+        <a class="header-navigation__cart-image">
+          <span class="visually-hidden">Корзина</span>
+        </a>
+
         <button class="header-navigation__toggle header-navigation__toggle--closed header-navigation__toggle--nojs" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
@@ -39,8 +45,8 @@
       <h1 class="main-title visually-hidden">Магазин кофейных напитков</h1>
     </header>
     <main class="main-container">
-      <section class="slider">
-        <div class="slider-wrapper">
+      <section class="promo">
+        <div class="slider">
           <p class="slider__title">Декаф Флэт Уайт</p>
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
           <button class="slider__button">Previous</button>
@@ -189,7 +195,10 @@
           </div>
           <ul class="catalog__list cards-list">
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-1mobile@1x.png, img/catalog/mobile/coffee-can-1mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-1mobile@1x.png" srcset="img/catalog/mobile/coffee-can-1mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -199,7 +208,10 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-2mobile@1x.png, img/catalog/mobile/coffee-can-2mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-2mobile@1x.png" srcset="img/catalog/mobile/coffee-can-2mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -209,7 +221,10 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-3mobile@1x.png, img/catalog/mobile/coffee-can-3mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-3mobile@1x.png" srcset="img/catalog/mobile/coffee-can-3mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -219,7 +234,10 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-4mobile@1x.png, img/catalog/mobile/coffee-can-4mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-4mobile@1x.png" srcset="img/catalog/mobile/coffee-can-4mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -229,7 +247,10 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-5mobile@1x.png, img/catalog/mobile/coffee-can-5mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-5mobile@1x.png" srcset="img/catalog/mobile/coffee-can-5mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -239,7 +260,10 @@
               </div>
             </li>
             <li class="catalog__item card">
-              <img class="card__image" src="#/" width="130" height="188>" alt="баночка кофе">
+              <picture>
+                <source type="img/webp" srcset="img/catalog/mobile/coffee-can-6mobile@1x.png, img/catalog/mobile/coffee-can-6mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
+                <img class="card__image" src="img/catalog/mobile/coffee-can-6mobile@1x.png" srcset="img/catalog/mobile/coffee-can-6mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
+              </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
               <p class="card_description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
@@ -267,13 +291,28 @@
         <div class="blok-group__header">
           <a class="main-footer__logo logo">
             <picture>
-              <img class="logo__image">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo/logo-desktop.svg" width="170" height="36">
+                <img class="logo__image" src="img/logo/logo-tablet.svg" alt="Логотип сайта." width="82" height="36">
+              </picture>
             </picture>
           </a>
           <div class="main-footer__social-links social-links">
-            <a class="social-links__item social-links__link--vkontakte" href="" target="_blank">Вконтакте</a>
-            <a class="social-links__item social-links__link--pinterest" href="" target="_blank">Пинтерест</a>
-            <a class="social-links__item social-links__link--ok" href="" target="_blank">Одноклассники</a>
+            <a class="social-links__item social-links__link--vkontakte" href="" target="_blank">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons/stack.svg#vk"></use>
+              </svg>
+            </a>
+            <a class="social-links__item social-links__link--pinterest" href="" target="_blank">
+              <svg width="22" height="22">
+                <use xlink:href="img/icons/stack.svg#pinterest"></use>
+              </svg>
+            </a>
+            <a class="social-links__item social-links__link--ok" href="" target="_blank">
+              <svg width="20" height="20">
+                <use xlink:href="img/icons/stack.svg#ok"></use>
+              </svg>
+            </a>
           </div>
         </div>
         <div class="main-footer__content">
