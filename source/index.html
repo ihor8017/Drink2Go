@@ -17,7 +17,7 @@
           </picture>
         </a>
 
-        <ul class="header-navigation__list">
+        <ul class="header-navigation__list visually-hidden">
           <li class="header-navigation__item">
             <a class="header-navigation__link link header-navigation__link--current">Главная</a>
           </li>
@@ -31,16 +31,17 @@
             <a class="header-navigation__link link">О нас</a>
           </li>
         </ul>
-        <a class="header-navigation__login">
-          <span class="visually-hidden">Войти</span>
-        </a>
-        <a class="header-navigation__cart-image">
-          <span class="visually-hidden">Корзина</span>
-        </a>
-
-        <button class="header-navigation__toggle header-navigation__toggle--closed header-navigation__toggle--nojs" type="button">
-          <span class="visually-hidden">Открыть меню</span>
-        </button>
+        <div class="header-navigation__icon-menu">
+          <a class="header-navigation__login">
+            <span class="visually-hidden">Войти</span>
+          </a>
+          <a class="header-navigation__cart">
+            <span class="visually-hidden">Корзина</span>
+          </a>
+          <button class="header-navigation__toggle header-navigation__toggle--closed header-navigation__toggle--nojs" type="button">
+            <span class="visually-hidden">Открыть меню</span>
+          </button>
+        </div>
       </nav>
       <h1 class="main-title visually-hidden">Магазин кофейных напитков</h1>
     </header>
