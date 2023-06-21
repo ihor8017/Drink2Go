@@ -1,0 +1,43 @@
+.slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+}
+.slider__feature {
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-transform: uppercase;
+  color: #7859CF;
+}
+.slider__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 48px;
+  text-align: center;
+}
+.slider__description {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.slider__price-wrapper {
+  margin-bottom: 10px;
+}
+.slider__old-price {
+  font-size: 16px;
+  line-height: 32px;
+  color: #7859CF;
+}
+.slider__price {
+  margin-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 32px;
+}

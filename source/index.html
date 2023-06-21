@@ -47,15 +47,18 @@
     </header>
     <main class="main-container">
       <section class="promo">
+        <img class="promo__image" src="img/slider/flat_white_desktop@1x.png" srcset="img/slider/flat_white_desktop@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
         <div class="slider">
+          <span class="slider__feature">Новинка!</span>
           <p class="slider__title">Декаф Флэт Уайт</p>
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+          <div class="slider__price-wrapper">
+            <del class="slider__old-price">295₽</del>
+            <span class="slider__price">225₽</span>
+            <button class="slider__button button" type="button">Заказать</button>
+          </div>
           <button class="slider__button">Previous</button>
           <button class="slider__button">Next</button>
-          <span class="slider__old-price">295₽</span>
-          <span class="slider__price">225₽</span>
-          <button class="slider__button button" type="button">Заказать</button>
-          <span class="slider__feature feature">Новинка!</span>
         </div>
       </section>
       <section class="advantage">
@@ -347,6 +350,6 @@
         <img class="main-footer__developer-logo">
       </div>
     </footer>
-    <script src="./js/script.js" defer></script>
+    <script type="module" src="./js/script.js" defer ></script>
   </body>
 </html>

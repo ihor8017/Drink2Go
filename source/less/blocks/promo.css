@@ -1,0 +1,10 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F3EBE1;
+}
+.promo__image {
+  display: block;
+  margin-bottom: 10px;
+}
