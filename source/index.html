@@ -46,10 +46,29 @@
       <h1 class="main-title visually-hidden">Магазин кофейных напитков</h1>
     </header>
     <main class="main-container">
+      <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide">Slide 1</div>
+    <div class="swiper-slide">Slide 2</div>
+    <div class="swiper-slide">Slide 3</div>
+  </div>
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  <!-- If we need scrollbar -->
+  <div class="swiper-scrollbar"></div>
+</div>
       <section class="promo">
         <img class="promo__image" src="img/slider/flat_white_desktop@1x.png" srcset="img/slider/flat_white_desktop@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
         <div class="slider">
-          <span class="slider__feature">Новинка!</span>
+          <span class="slider__feature feature">Новинка!</span>
           <p class="slider__title">Декаф Флэт Уайт</p>
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
           <div class="slider__price-wrapper">
@@ -64,24 +83,24 @@
       <section class="advantage">
         <span class="advantage__feature feature">Преимущества</span>
         <h2 class="advantage__title">Главные причины выбрать Drink2Go</h2>
-        <ul class="advantage__list">
-          <li class="advantage__item">
+        <div class="advantage__list">
+          <div class="advantage__item advantage__item--speed">
             <h3 class="advantage__item-title">Скорость</h3>
             <p class="advantage__item-text">Готовый напиток всегда под рукой — просто открой банку</p>
-          </li>
-          <li class="advantage__item">
+          </div>
+          <li class="advantage__item advantage__item--convenience">
             <h3 class="advantage__item-title">Удобство</h3>
             <p class="advantage__item-text">Легко помещается и в карман, и в маленькую сумочку</p>
           </li>
-          <li class="advantage__item">
+          <li class="advantage__item advantage__item--cheerfulness">
             <h3 class="advantage__item-title">Бодрость</h3>
             <p class="advantage__item-text">Сбалансированная доза кофеина даст мощный заряд энергии</p>
           </li>
-          <li class="advantage__item">
+          <li class="advantage__item advantage__item--ecological">
             <h3 class="advantage__item-title">Экологичность</h3>
             <p class="advantage__item-text">Вся упаковка сделана из перерабатываемых материалов</p>
           </li>
-        </ul>
+        </div>
       </section>
       <section class="catalog">
         <span class="catalog__feature feature">Каталог</span>

@@ -26,16 +26,16 @@
   content: "";
 }
 .advantage__item--speed::before {
-  background: url(../../img/advantage/speed.svg) no-repeat  center;
+  background: url(../../img/advantage/speed.svg) no-repeat center;
 }
 .advantage__item--convenience::before {
-  background: url(../../img/advantage/convenience.svg) no-repeat  center;
+  background: url(../../img/advantage/convenience.svg) no-repeat center;
 }
 .advantage__item--cheerfulness::before {
-  background: url(../../img/advantage/cheerfulness.svg) no-repeat  center;
+  background: url(../../img/advantage/cheerfulness.svg) no-repeat center;
 }
 .advantage__item--ecological::before {
-  background: url(../../img/advantage/ecological.svg) no-repeat  center;
+  background: url(../../img/advantage/ecological.svg) no-repeat center;
 }
 .advantage__item-title {
   text-align: center;

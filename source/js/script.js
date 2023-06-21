@@ -1,8 +1,6 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 // import Swiper and modules styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
+
 const swiper = new Swiper('.swiper', {
   // Optional parameters
   modules: [Navigation, Pagination],
@@ -20,4 +18,3 @@ const swiper = new Swiper('.swiper', {
     prevEl: '.swiper-button-prev',
   },
 });
-console.log("fucking JS");
