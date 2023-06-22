@@ -1,5 +1,6 @@
 .catalog {
   padding: 0 20px;
+  background-color: #F8F8F8;
 }
 .catalog__feature {
   marging-bottom: 4px;
@@ -9,4 +10,28 @@
   margin-top: 0;
   margin-bottom: 20px;
   text-align: center;
+}
+.catalog__button {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.catalog__filters {
+  margin-bottom: 40px;
+}
+.catalog__sort {
+  display: flex;
+  justify-content: space-between;
+}
+.catalog__sort span {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 24px;
+}
+.catalog__select {
+  text-align: right;
+  font-size: 16px;
+  font-family: Montserrat;
+  font-weight: 600;
+  line-height: 24px;
 }

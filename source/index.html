@@ -71,7 +71,7 @@
           <span class="slider__feature feature">Новинка!</span>
           <p class="slider__title">Декаф Флэт Уайт</p>
           <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div class="slider__price-wrapper">
+          <div class="slider__card__price-wrapper">
             <del class="slider__old-price">295₽</del>
             <span class="slider__price">225₽</span>
             <button class="slider__button button" type="button">Заказать</button>
@@ -150,7 +150,7 @@
                 </li>
                 <li class="filter-group__item">
                   <label class="control">
-                    <input class="field-group__input visually-hidden control__input" type="radio" name="milk" value="milkless">
+                    <input class="field-group__input visually-hidden control__input" type="radio" name="milk" value="milkless" disabled>
                     <span class="control__mark"></span>
                     <span class="field-group__text control__lable">Без молока</span>
                   </label>
@@ -192,7 +192,7 @@
               </li>
               <li class="filter-group__item">
                 <label class="control">
-                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="Peru">
+                  <input class="field-group__input visually-hidden control__input" type="checkbox" name="Peru" disabled>
                   <span class="control__mark"></span>
                   <span class="field-group__text control__lable">Перу</span>
                 </label>
@@ -201,32 +201,32 @@
           </fieldset>
           <div class="catalog__buttons-wrapper">
             <button class="catalog__button button" type="submit">Применить</button>
-            <button class="catalog__button button button__reset" type="reset">Сбросить</button>
+            <button class="catalog__button button button__light" type="reset">Сбросить</button>
           </div>
           </form>
 
-        <div class="drinks-result">
-          <div class="wrap-sort">
+        <div class="catalog__result">
+          <div class="catalog__sort">
             <span>Сортировка:</span>
-            <select class="sort">
+            <select class="catalog__select">
               <option>по умолчанию</option>
               <option>сначала дорогие</option>
               <option>сначала дешёвые</option>
               <option>высокий рейтинг</option>
             </select>
           </div>
-          <ul class="catalog__list cards-list">
+          <ul class="catalog__list">
             <li class="catalog__item card">
               <picture>
                 <source type="img/webp" srcset="img/catalog/mobile/coffee-can-1mobile@1x.png, img/catalog/mobile/coffee-can-1mobile@2x.webp 2x" width="130" height="188>" alt="баночка кофе">
                 <img class="card__image" src="img/catalog/mobile/coffee-can-1mobile@1x.png" srcset="img/catalog/mobile/coffee-can-1mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button">В корзину</button>
               </div>
             </li>
             <li class="catalog__item card">
@@ -235,11 +235,11 @@
                 <img class="card__image" src="img/catalog/mobile/coffee-can-2mobile@1x.png" srcset="img/catalog/mobile/coffee-can-2mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button">В корзину</button>
               </div>
             </li>
             <li class="catalog__item card">
@@ -248,11 +248,11 @@
                 <img class="card__image" src="img/catalog/mobile/coffee-can-3mobile@1x.png" srcset="img/catalog/mobile/coffee-can-3mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button">В корзину</button>
               </div>
             </li>
             <li class="catalog__item card">
@@ -261,11 +261,11 @@
                 <img class="card__image" src="img/catalog/mobile/coffee-can-4mobile@1x.png" srcset="img/catalog/mobile/coffee-can-4mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button">В корзину</button>
               </div>
             </li>
             <li class="catalog__item card">
@@ -274,11 +274,11 @@
                 <img class="card__image" src="img/catalog/mobile/coffee-can-5mobile@1x.png" srcset="img/catalog/mobile/coffee-can-5mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button"><span>В корзину</span></button>
               </div>
             </li>
             <li class="catalog__item card">
@@ -287,23 +287,33 @@
                 <img class="card__image" src="img/catalog/mobile/coffee-can-6mobile@1x.png" srcset="img/catalog/mobile/coffee-can-6mobile@2x.png 2x" width="130" height="188>" alt="баночка кофе">
               </picture>
               <h3 class="card__title">Декаф Флэт Уайт</h3>
-              <p class="card_description">Кофе без кофеина из Эфиопии
+              <p class="card__description">Кофе без кофеина из Эфиопии
                 с натуральным фермерским молоком</p>
-              <div class="price-wrapper">
+              <div class="card__price-wrapper">
                 <span class="225₽">225₽</span>
-                <button class="card_button button" type="button">В корзину</button>
+                <button class="card__button button" type="button">В корзину</button>
               </div>
             </li>
           </ul>
         </div>
         <div class="pagination">
-          <button class="pagination__button" type="button">Назад</button>
           <ul class="pagination__list">
-            <li class="pagination__item">1</li>
-            <li class="pagination__item pagination__item--active">2</li>
-            <li class="pagination__item">3</li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#"><span>&lsaquo;</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#"><span>1</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link pagination__link--active" href="#"><span>2</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#"><span>3</span></a>
+            </li>
+            <li class="pagination__item">
+              <a class="pagination__link" href="#"><span>&rsaquo;</span></a>
+            </li>
           </ul>
-          <button class="pagination__button" type="button">Вперёд</button>
         </div>
       </section>
     </main>

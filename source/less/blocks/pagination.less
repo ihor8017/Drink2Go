@@ -1,0 +1,34 @@
+.pagination {
+  padding-bottom: 44px;
+}
+.pagination__list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.pagination__link {
+  padding: 8px 16px;
+  background: @BaseWhite;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  color: @BasePrimary;
+  &:hover {
+    color: @BaseWhite;
+    background-color: @Primary-Lighter;
+  }
+  &:active {
+    color: @BaseWhite;
+    background-color: @BasePrimary;
+  }
+  &:focus {
+    color: @BaseWhite;
+    background-color: @Primary-Lighter;
+  }
+}
+.pagination__link--active {
+  background: none;
+  color: @BaseBlack;
+}
