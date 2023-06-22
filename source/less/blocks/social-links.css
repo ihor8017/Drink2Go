@@ -1,0 +1,10 @@
+.social-links__item {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 9px;
+  padding-bottom: 4px;
+  margin-right: 20px;
+}
+.social-links__item:last-child {
+  margin-right: 0;
+}

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 30px;
 }
 .range-input input {
   display: inline-block;
@@ -14,13 +15,22 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+  &::placeholder {
+    color: @BaseGray;
+  }
+  &:hover {
+    border-color: @BasePrimary;
+  }
+  &:focus {
+    outline: none;
+    border-color: #593CAC;
+  }
 }
 .range-input input::-webkit-outer-spin-button,
 .range-input input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
-.range-input span,
-.range-input__price-min {
+.range-input input:disabled {
   color: @BaseGray;
 }

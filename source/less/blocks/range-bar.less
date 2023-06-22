@@ -1,12 +1,16 @@
-.range-bar__scale {
+.range-bar {
   position: relative;
+}
+.range-bar__scale::before {
+  position: absolute;
   box-sizing: border-box;
   width: 242px;
   height: 4px;
-  margin-bottom: 30px;
   background-color: @Primary-Lighter;
+  content: "";
+  z-index: 1;
 }
-.range-bar__scale::before {
+.range-bar__scale::after {
   position: absolute;
   left: 0;
   top: 1px;
@@ -14,7 +18,7 @@
   height: 2px;
   background-color: @BaseGray;
   content: "";
-
+  z-index: 0;
 }
 .range-bar__toggle {
   position: absolute;
@@ -22,8 +26,32 @@
   top: -12px;
   width: 24px;
   height: 24px;
+  background-color: @BaseWhite;
   border: 2px solid @Primary-Lighter;
   border-radius: 50%;
+  z-index: 2;
+}
+.range-bar__toggle:hover.range-bar__toggle::after{
+  position: absolute;
+  box-sizing: border-box;
+  top: 2.5px;
+  left: 2.5px;
+  width: 16px;
+  height: 16px;
+  background-color: rgba(120, 89, 207, 0.25);
+  border-radius: 50%;
+  content: "";
+}
+.range-bar__toggle:active.range-bar__toggle::after{
+  position: absolute;
+  box-sizing: border-box;
+  top: 2.5px;
+  left: 2.5px;
+  width: 16px;
+  height: 16px;
+  background-color: @BasePrimary;
+  border-radius: 50%;
+  content: "";
 }
 .range-bar__toggle--max {
   left: 236px;
