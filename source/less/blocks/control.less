@@ -1,0 +1,31 @@
+.control {
+  position: relative;
+}
+.control__mark {
+  position:absolute;
+  box-sizing: border-box;
+  width: 24px;
+  height: 24px;
+  border: 2px solid @BaseGray;
+  border-radius: 50%;
+  background-color: @BaseWhite;
+}
+.control__input[type="radio"]:checked + .control__mark::before {
+  position:absolute;
+  box-sizing: border-box;
+  top: 2.5px;
+  left: 2.5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: @Primary-Lighter;
+  content: "";
+}
+.control__input[type="radio"]:checked + .control__mark {
+  border-color: @Primary-Lighter;
+}
+.control__lable {
+  margin-left: 34px;
+  font-size: 16px;
+  line-height: 24px;
+}

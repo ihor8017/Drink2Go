@@ -1,0 +1,30 @@
+.range-bar__scale {
+  position: relative;
+  box-sizing: border-box;
+  width: 242px;
+  height: 4px;
+  margin-bottom: 30px;
+  background-color: @Primary-Lighter;
+}
+.range-bar__scale::after {
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 280px;
+  height: 2px;
+  background-color: @BaseGray;
+  content: "";
+  z-index: -1;
+}
+.range-bar__toggle {
+  position: absolute;
+  box-sizing: border-box;
+  top: -12px;
+  width: 24px;
+  height: 24px;
+  border: 2px solid @Primary-Lighter;
+  border-radius: 50%;
+}
+.range-bar__toggle--max {
+  left: 236px;
+}

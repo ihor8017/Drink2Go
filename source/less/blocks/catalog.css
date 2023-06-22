@@ -1,0 +1,12 @@
+.catalog {
+  padding: 0 20px;
+}
+.catalog__feature {
+  marging-bottom: 4px;
+  text-align: center;
+}
+.catalog__title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
