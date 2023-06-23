@@ -19,3 +19,15 @@ navToggle.addEventListener('click',() =>{
     navMain.classList.remove('header-navigation__list--open');
   }
 });
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+  },
+});

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Drink2Go</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
@@ -18,16 +19,16 @@
         </a>
         <ul class="header-navigation__list no-js">
           <li class="header-navigation__item">
-            <a class="header-navigation__link link header-navigation__link--current">Главная</a>
+            <a class="header-navigation__link link header-navigation__link--current" href="#">Главная</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link link">Каталог</a>
+            <a class="header-navigation__link link" href="#">Каталог</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link link ">Доставка</a>
+            <a class="header-navigation__link link" href="#">Доставка</a>
           </li>
           <li class="header-navigation__item">
-            <a class="header-navigation__link link">О нас</a>
+            <a class="header-navigation__link link" href="#">О нас</a>
           </li>
         </ul>
         <div class="header-navigation__icon-menu">
@@ -46,16 +47,56 @@
     </header>
     <main class="main-container no-js">
       <section class="promo">
-        <img class="promo__image" src="img/slider/flat_white_desktop@1x.png" srcset="img/slider/flat_white_desktop@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
-        <div class="slider">
-          <span class="slider__feature feature">Новинка!</span>
-          <p class="slider__title">Декаф Флэт Уайт</p>
-          <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-          <div class="slider__card__price-wrapper">
-            <del class="slider__old-price">295₽</del>
-            <span class="slider__price">225₽</span>
-            <button class="slider__button button" type="button">Заказать</button>
+        <!-- Slider main container -->
+        <div class="swiper">
+          <!-- Additional required wrapper -->
+          <div class="swiper-wrapper">
+            <!-- Slides -->
+            <div class="swiper-slide swiper-slide--flat-white">
+              <img class="promo__image" src="img/slider/flat_white_desktop@1x.png" srcset="img/slider/flat_white_desktop@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
+              <div class="slider">
+                <span class="slider__feature feature">Новинка!</span>
+                <p class="slider__title">Декаф Флэт Уайт</p>
+                <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
+                <div class="slider__card__price-wrapper">
+                  <del class="slider__old-price">295₽</del>
+                  <span class="slider__price">225₽</span>
+                  <button class="slider__button button" type="button">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--lavender">
+              <img class="promo__image" src="img/slider/lavender-mobile@1x.png" srcset="img/slider/lavender-mobile@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
+              <div class="slider">
+                <span class="slider__feature feature">Новинка!</span>
+                <p class="slider__title">Лавандовый Латте</p>
+                <p class="slider__description">Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор</p>
+                <div class="slider__card__price-wrapper">
+                  <del class="slider__old-price">285₽</del>
+                  <span class="slider__price">265₽</span>
+                  <button class="slider__button button" type="button">Заказать</button>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide swiper-slide--expresso">
+                <img class="promo__image" src="img/slider/expresso-mobile@1x.png" srcset="img/slider/expresso-mobile@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
+                <div class="slider">
+                  <span class="slider__feature feature">Новинка!</span>
+                  <p class="slider__title">Тройной Эспрессо</p>
+                  <p class="slider__description">Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость</p>
+                  <div class="slider__card__price-wrapper">
+                    <del class="slider__old-price">395₽</del>
+                    <span class="slider__price">375₽</span>
+                    <button class="slider__button button" type="button">Заказать</button>
+                  </div>
+                </div>
+            </div>
           </div>
+          <!-- If we need pagination -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </section>
       <section class="advantage">
@@ -373,6 +414,7 @@
       </a>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="./js/script.js" defer ></script>
   </body>
 </html>

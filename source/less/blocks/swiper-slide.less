@@ -1,0 +1,26 @@
+.swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+}
+.swiper-slide::after {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 656px;
+  background-color:  #F3EBE1;
+  content: "";
+  z-index: -1;
+}
+.swiper-slide--lavender::after {
+  background-color: #EAE6FC;
+}
+.swiper-slide--expresso::after {
+  background-color: #E5E6E8;
+}
+.swiper-slide image {
+  display: block;
+  margin-bottom: 10px;
+}

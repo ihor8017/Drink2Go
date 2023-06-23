@@ -161,7 +161,7 @@ a {
   right: 0;
   position: absolute;
 }
-.header-navigation__toggle::after {
+.header-navigation__toggle--close::after {
   position: relative;
   display: block;
   content: "";
@@ -181,7 +181,20 @@ a {
   padding: 29.5px 22px;
   background: none;
 }
+.header-navigation__toggle--open.header-navigation__toggle::after {
+  position: relative;
+  display: block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  box-shadow: none;
+  background: url(../../img/close-button.svg) no-repeat center;
+}
+.header-navigation__toggle--open.header-navigation__toggle {
+  padding: 24px 24px;
+}
 .header-navigation__list {
+  display: none;
   position: absolute;
   left: 0;
   top: 60px;
@@ -190,6 +203,9 @@ a {
   list-style: none;
   width: 320px;
   height: min-content;
+}
+.header-navigation__list.header-navigation__list--open {
+  display: block;
 }
 .header-navigation__item {
   text-align: center;
@@ -200,6 +216,12 @@ a {
   display: block;
   padding-top: 20px;
   padding-bottom: 20px;
+}
+.header-navigation__icon-link:active {
+  background-color: #F0EBFF;
+}
+.header-navigation__toggle:active {
+  background-color: #F0EBFF;
 }
 .feature {
   font-weight: 700;
@@ -270,13 +292,6 @@ a {
 }
 .advantage__item-text {
   text-align: center;
-}
-.promo {
-  display: flex;
-  flex-direction: column;
-  padding-top: 20px;
-  align-items: center;
-  background-color: #F3EBE1;
 }
 .promo__image {
   display: block;
@@ -565,10 +580,6 @@ a {
   font-size: 20px;
   line-height: 32px;
 }
-.swiper {
-  width: 320px;
-  height: 656px;
-}
 .card {
   padding-top: 40px;
   padding-left: 20px;
@@ -724,8 +735,11 @@ a {
   display: inline-block;
 }
 .main-footer__developer {
+  width: 100%;
+  text-align: center;
   padding-top: 20px;
   padding-bottom: 30px;
+  border-top: 1px solid #F0EBFF;
 }
 @media (min-width: 768px) {
   .main-footer {
@@ -773,10 +787,18 @@ a {
   text-transform: uppercase;
   color: #333333;
 }
+.link:hover,
+.link:focus {
+  color: #9070EC;
+}
+.link:active {
+  color: #593CAC;
+}
 .link__developer {
   display: flex;
   color: #BDBDBD;
   text-transform: none;
+  justify-content: center;
 }
 .link__developer span {
   margin-right: 4px;
@@ -785,6 +807,44 @@ a {
   display: inline-block;
   line-height: 0;
 }
+.link__developer-logo:hover {
+  color: #7859CF;
+}
+.link__developer-logo:active {
+  color: #9070EC;
+}
+.link__developer-logo:focus {
+  color: #7859CF;
+}
 .no-js.main-container {
-  margin-top: 239px;
+  margin-top: 227px;
+}
+.no-js.header-navigation__list {
+  display: block;
+}
+.swiper-slide {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+}
+.swiper-slide::after {
+  position: absolute;
+  top: 0;
+  width: 320px;
+  height: 656px;
+  background-color: #F3EBE1;
+  content: "";
+  z-index: -1;
+}
+.swiper-slide--lavender::after {
+  background-color: #EAE6FC;
+}
+.swiper-slide--expresso::after {
+  background-color: #E5E6E8;
+}
+.swiper-slide image {
+  display: block;
+  margin-bottom: 10px;
 }

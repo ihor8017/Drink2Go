@@ -1,4 +1,46 @@
-.swiper {
-  width: 320px;
-  height: 656px;
+.swiper-pagination {
+  display: none;
 }
+.swiper-pagination-bullet {
+  width: 62px;
+  height: 2px;
+  border-radius: 0;
+  opacity: var(--swiper-pagination-bullet-opacity, 1);
+  background-color: @BaseWhite;
+}
+.swiper-pagination-bullet-active {
+  background-color: @BasePrimary;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  position: absolute;
+  box-sizing: border-box;
+  left: -10px;
+  top: -298px;
+  height: 656px;
+  padding: 4px;
+  padding-top: 315px;
+  width: 20px;
+  font-size: 20px;
+}
+.swiper-button-next::after {
+  left: 33px;
+}
+.swiper-button-next,
+.swiper-button-prev {
+  width: 11px;
+  height: 20px;
+  padding: 8px 16px;
+ color: @BasePrimary;
+}
+.swiper-button-prev:active.swiper-button-prev::after {
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+}
+.swiper-button-next:active.swiper-button-next::after {
+  background: linear-gradient(90deg,rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+}
+@media (min-width: @desktop-width) {
+.swiper-pagination {
+  display: block;
+}
+}
+
