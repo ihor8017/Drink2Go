@@ -10,6 +10,7 @@
   display: flex;
   color: @BaseGray;
   text-transform: none;
+  justify-content: center;
   & span {
     margin-right: 4px;
   }
@@ -17,4 +18,13 @@
 .link__developer-logo {
   display: inline-block;
   line-height: 0;
+  &:hover {
+    color: @BasePrimary;
+  }
+  &:active {
+    color: @Primary-Lighter;
+  }
+  &:focus {
+    color: @BasePrimary;
+  }
 }
