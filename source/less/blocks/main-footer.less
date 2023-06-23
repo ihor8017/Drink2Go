@@ -7,17 +7,23 @@
   width: @mobile-width;
   margin: 0 auto;
 }
+.main-footer__content {
+  padding-top: 40px;
+}
 .main-footer__item {
   position: relative;
-  padding-top: 40px;
+  margin-bottom: 27px;
   &::before {
     position: absolute;
-    top: 10px;
+    top: -20px;
     left: -20px;
     width: 320px;
     height: 1px;
-    background-color: #F0EBFF;
+    background-color: @BaseSecondary;
     content: "";
+  }
+  &:last-child {
+    margin-bottom: 0px;
   }
 }
 .main-footer__list {
@@ -33,7 +39,7 @@
 }
 .main-footer__title {
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 18px;
   font-weight: 700;
   letter-spacing: 0.3px;
   color: @BasePrimary;
@@ -57,7 +63,7 @@
   position: relative;
   display: block;
   padding-left: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   &::before {
     position: absolute;
     top: 1px;
@@ -67,9 +73,14 @@
     background: url(../../img/phone.svg) no-repeat center;
     content: "";
   }
+  & span {
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -0.1px;
+  }
 }
 .main-footer__item-link {
-  padding-bottom: 12px;
+  padding-bottom: 15px;
 }
 .main-footer__social-links {
   display: inline-block;
@@ -80,6 +91,9 @@
   padding-top: 20px;
   padding-bottom: 30px;
   border-top: 1px solid @BaseSecondary;
+}
+.main-footer__map-image {
+  display: block;
 }
 @media (min-width: @tablet-width) {
   .main-footer {

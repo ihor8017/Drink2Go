@@ -58,7 +58,7 @@
                 <span class="slider__feature feature">Новинка!</span>
                 <p class="slider__title">Декаф Флэт Уайт</p>
                 <p class="slider__description">Свежесваренный кофе без кофеина из Эфиопии с натуральным фермерским молоком — то, что нужно для расслабления после тяжёлого рабочего дня</p>
-                <div class="slider__card__price-wrapper">
+                <div class="slider__price-wrapper">
                   <del class="slider__old-price">295₽</del>
                   <span class="slider__price">225₽</span>
                   <button class="slider__button button" type="button">Заказать</button>
@@ -126,7 +126,7 @@
         <h2 class="catalog__title">Каталог кофейных напитков</h2>
           <form class="catalog__filters filters" method="get" action="https://echo.htmlacademy.ru/">
             <fieldset class="filter-group">
-              <legend class="filter-group__title">Цена</legend>
+              <legend class="filter-group__title filter-group__title--range">Цена</legend>
               <div class="range-bar">
                 <div class="range-bar__scale">
                   <button class="range-bar__toggle range-bar__toggle--min" type="button">
@@ -143,7 +143,7 @@
                 </div>
               </div>
             </fieldset>
-            <fieldset class="filter-group">
+            <fieldset class="filter-group filter-group--indent">
               <legend class="filter-group__title">Наличие молока</legend>
               <ul class="filter-group__list">
                 <li class="filter-group__item">
@@ -178,7 +178,7 @@
             </fieldset>
 
           </fieldset>
-          <fieldset class="filter-group">
+          <fieldset class="filter-group filter-group--country">
             <legend class="filter-group__title">Страна произрастания</legend>
             <ul class="filter-group__list">
               <li class="filter-group__item">
@@ -223,7 +223,6 @@
             <button class="catalog__button button button__light" type="reset">Сбросить</button>
           </div>
           </form>
-
         <div class="catalog__result">
           <div class="catalog__sort">
             <span>Сортировка:</span>
@@ -337,8 +336,10 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="main-footer__map"></div>
-      <div class="main-footer__block-group block-group">
+      <div class="main-footer__map">
+        <img src="img/map/map_bg.jpg" class="main-footer__map-image" width="320" height="420">
+      </div>
+      <div class="main-footer__block-group block-group" >
         <div class="block-group__header">
           <a class="main-footer__logo logo" href="#">
             <picture>

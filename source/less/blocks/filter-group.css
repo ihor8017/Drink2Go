@@ -1,8 +1,18 @@
 .filter-group {
   margin: 0;
+  margin-left: 3px;
   margin-bottom: 30px;
   padding: 0;
   border: none;
+}
+.filter-group--indent {
+  margin-bottom: 15px;
+}
+.filter-group--country {
+  margin-bottom: 10px;
+}
+.filter-group__title.filter-group__title--range {
+  margin-bottom: 30px;
 }
 .filter-group__title {
   margin-bottom: 20px;

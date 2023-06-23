@@ -2,7 +2,7 @@
   position: relative;
   width: 192px;
   height: 4px;
-  margin-bottom: 30px;
+  margin-bottom: 3px;
   background-color: #9070EC;
 }
 .range-bar__scale::after {
