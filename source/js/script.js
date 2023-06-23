@@ -1,20 +1,21 @@
-import Swiper, { Navigation, Pagination } from 'swiper';
-// import Swiper and modules styles
+let navMain = document.querySelector('.header-navigation__list');
+let navToggle = document.querySelector('.header-navigation__toggle');
+let mainContent = document.querySelector('.main-container');
 
-const swiper = new Swiper('.swiper', {
-  // Optional parameters
-  modules: [Navigation, Pagination],
-  direction: 'horizontal',
-  loop: true,
+navMain.classList.remove("no-js");
+navToggle.classList.remove('header-navigation__toggle--open');
+navToggle.classList.add('header-navigation__toggle--close');
+mainContent.classList.remove("no-js");
 
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
-
-  // Navigation arrows
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
+navToggle.addEventListener('click',() =>{
+  if (navToggle.classList.contains('header-navigation__toggle--close')) {
+    navToggle.classList.remove('header-navigation__toggle--close');
+    navToggle.classList.add('header-navigation__toggle--open');
+    navMain.classList.add('header-navigation__list--open');
+  }
+  else {
+    navToggle.classList.remove('header-navigation__toggle--open');
+    navToggle.classList.add('header-navigation__toggle--close');
+    navMain.classList.remove('header-navigation__list--open');
+  }
 });

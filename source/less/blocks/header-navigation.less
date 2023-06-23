@@ -7,6 +7,7 @@
 .header-navigation__icon-menu {
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
   & a,
   & button {
     padding: 10px;
@@ -28,9 +29,10 @@
 }
 .header-navigation__toggle {
   border: none;
-  position: relative;
+  right: 0;
+  position: absolute;
 }
-.header-navigation__toggle::after {
+.header-navigation__toggle--close::after {
   position: relative;
   display: block;
   content: "";
@@ -41,4 +43,50 @@
   background: #000000;
   box-shadow: 0 4px 0 0 #000000,
     0 9px 0 0 #000000;
+}
+.header-navigation__icon-menu .header-navigation__icon-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 22px;
+}
+.header-navigation__icon-menu .header-navigation__toggle {
+  padding: 29.5px 22px;
+  background: none;
+}
+.header-navigation__toggle--open.header-navigation__toggle::after {
+  position: relative;
+  display: block;
+  content: "";
+  width:12px;
+  height: 12px;
+  box-shadow: none;
+  background: url(../../img/close-button.svg) no-repeat center;
+}
+.header-navigation__toggle--open.header-navigation__toggle {
+  padding: 24px 24px;
+}
+.header-navigation__list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: @mobile-width;
+  height: min-content;
+  &.header-navigation__list--open {
+    display: block;
+  }
+}
+
+.header-navigation__item {
+  text-align: center;
+  background: @BaseWhite;
+  border-top: 1px solid @BaseGray;
+}
+.header-navigation__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }

@@ -94,9 +94,10 @@ a {
 }
 .main-header {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
-  padding: 12px 20px;
+  padding: 0 20px;
   box-sizing: border-box;
   width: 320px;
   margin: 0 auto;
@@ -135,6 +136,7 @@ a {
 .header-navigation__icon-menu {
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
 }
 .header-navigation__icon-menu a,
 .header-navigation__icon-menu button {
@@ -156,7 +158,8 @@ a {
 }
 .header-navigation__toggle {
   border: none;
-  position: relative;
+  right: 0;
+  position: absolute;
 }
 .header-navigation__toggle::after {
   position: relative;
@@ -168,6 +171,35 @@ a {
   right: 0px;
   background: #000000;
   box-shadow: 0 4px 0 0 #000000, 0 9px 0 0 #000000;
+}
+.header-navigation__icon-menu .header-navigation__icon-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 22px;
+}
+.header-navigation__icon-menu .header-navigation__toggle {
+  padding: 29.5px 22px;
+  background: none;
+}
+.header-navigation__list {
+  position: absolute;
+  left: 0;
+  top: 60px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 320px;
+  height: min-content;
+}
+.header-navigation__item {
+  text-align: center;
+  background: #FFFFFF;
+  border-top: 1px solid #BDBDBD;
+}
+.header-navigation__link {
+  display: block;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .feature {
   font-weight: 700;
@@ -242,6 +274,7 @@ a {
 .promo {
   display: flex;
   flex-direction: column;
+  padding-top: 20px;
   align-items: center;
   background-color: #F3EBE1;
 }
@@ -624,8 +657,17 @@ a {
   margin: 0 auto;
 }
 .main-footer__item {
-  padding-top: 20px;
-  border-top: 1px solid #F0EBFF;
+  position: relative;
+  padding-top: 40px;
+}
+.main-footer__item::before {
+  position: absolute;
+  top: 10px;
+  left: -20px;
+  width: 320px;
+  height: 1px;
+  background-color: #F0EBFF;
+  content: "";
 }
 .main-footer__list {
   margin: 0;
@@ -645,11 +687,45 @@ a {
   letter-spacing: 0.3px;
   color: #7859CF;
 }
+.main-footer__adress {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 16px;
+}
+.main-footer__adress::before {
+  position: absolute;
+  left: 0;
+  top: 3px;
+  width: 13px;
+  height: 16px;
+  background: url(../../img/marker.svg) no-repeat center;
+  content: "";
+}
+.main-footer__phone {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  padding-bottom: 20px;
+}
+.main-footer__phone::before {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  width: 13px;
+  height: 16px;
+  background: url(../../img/phone.svg) no-repeat center;
+  content: "";
+}
 .main-footer__item-link {
   padding-bottom: 12px;
 }
 .main-footer__social-links {
   display: inline-block;
+}
+.main-footer__developer {
+  padding-top: 20px;
+  padding-bottom: 30px;
 }
 @media (min-width: 768px) {
   .main-footer {
@@ -693,7 +769,22 @@ a {
   font-size: 12px;
   font-weight: 500;
   line-height: 16px;
-  letter-spacing: 0.24px;
+  letter-spacing: 0.25px;
   text-transform: uppercase;
   color: #333333;
+}
+.link__developer {
+  display: flex;
+  color: #BDBDBD;
+  text-transform: none;
+}
+.link__developer span {
+  margin-right: 4px;
+}
+.link__developer-logo {
+  display: inline-block;
+  line-height: 0;
+}
+.no-js.main-container {
+  margin-top: 239px;
 }

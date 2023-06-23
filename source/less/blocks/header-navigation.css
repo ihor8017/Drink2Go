@@ -7,6 +7,7 @@
 .header-navigation__icon-menu {
   display: flex;
   justify-content: space-between;
+  margin-right: 40px;
 }
 .header-navigation__icon-menu a,
 .header-navigation__icon-menu button {
@@ -28,7 +29,8 @@
 }
 .header-navigation__toggle {
   border: none;
-  position: relative;
+  right: 0;
+  position: absolute;
 }
 .header-navigation__toggle::after {
   position: relative;
@@ -40,4 +42,13 @@
   right: 0px;
   background: #000000;
   box-shadow: 0 4px 0 0 #000000, 0 9px 0 0 #000000;
+}
+.header-navigation__icon-menu .header-navigation__icon-link {
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 22px;
+}
+.header-navigation__icon-menu .header-navigation__toggle {
+  padding: 29.5px 22px;
+  background: none;
 }

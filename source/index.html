@@ -16,8 +16,7 @@
             <img class="logo__image" src="img/logo/logo-mobile.svg" alt="Логотип сайта." width="32" height="36">
           </picture>
         </a>
-
-        <ul class="header-navigation__list visually-hidden">
+        <ul class="header-navigation__list no-js">
           <li class="header-navigation__item">
             <a class="header-navigation__link link header-navigation__link--current">Главная</a>
           </li>
@@ -32,39 +31,20 @@
           </li>
         </ul>
         <div class="header-navigation__icon-menu">
-          <a class="header-navigation__login" href="#">
+          <a class="header-navigation__icon-link header-navigation__login" href="#">
             <span class="visually-hidden">Войти</span>
           </a>
-          <a class="header-navigation__cart" href="#">
+          <a class="header-navigation__icon-link header-navigation__cart" href="#">
             <span class="visually-hidden">Корзина</span>
           </a>
-          <button class="header-navigation__toggle header-navigation__toggle--closed header-navigation__toggle--nojs" type="button">
+          <button class="header-navigation__toggle header-navigation__toggle--open" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
       </nav>
       <h1 class="main-title visually-hidden">Магазин кофейных напитков</h1>
     </header>
-    <main class="main-container">
-      <!-- Slider main container -->
-<div class="swiper">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-  </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
+    <main class="main-container no-js">
       <section class="promo">
         <img class="promo__image" src="img/slider/flat_white_desktop@1x.png" srcset="img/slider/flat_white_desktop@2x.png 2x" width="280" height="280" alt="Баночка свежесваренного кофе без кофеина">
         <div class="slider">
@@ -76,8 +56,6 @@
             <span class="slider__price">225₽</span>
             <button class="slider__button button" type="button">Заказать</button>
           </div>
-          <button class="slider__button">Previous</button>
-          <button class="slider__button">Next</button>
         </div>
       </section>
       <section class="advantage">
@@ -394,6 +372,6 @@
         </svg></a>
       </div>
     </footer>
-    <script type="module" src="./js/script.js" defer ></script>
+    <script src="./js/script.js" defer ></script>
   </body>
 </html>
