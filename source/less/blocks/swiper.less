@@ -3,7 +3,7 @@
 }
 .swiper-pagination-bullet {
   width: 62px;
-  height: 2px;
+  height: 4px;
   border-radius: 0;
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background-color: @BaseWhite;
@@ -54,5 +54,19 @@
 @media (min-width: @desktop-width) {
 .swiper-pagination {
   display: block;
+}
+.swiper-button-next::after, .swiper-button-prev::after {
+  left: -8px;
+  top: -338px;
+  height: 714px;
+  padding: 36px;
+  padding-top: 360px;
+  width: 80px;
+}
+.swiper-button-next::after {
+  left: -29px;
+}
+.swiper-pagination.swiper-pagination-horizontal {
+  bottom: 70px;
 }
 }

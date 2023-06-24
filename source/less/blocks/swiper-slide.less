@@ -34,3 +34,14 @@
   height: 640px;
 }
 }
+@media (min-width: @desktop-width) {
+  .swiper-slide {
+    flex-direction: row;
+    padding-top: 30px;
+    padding-bottom: 80px;
+  }
+  .swiper-slide::after {
+    width: @desktop-width;
+    height: 714px;
+  }
+}

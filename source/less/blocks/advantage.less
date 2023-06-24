@@ -80,8 +80,6 @@
     position: absolute;
     margin-bottom: 13px;
     left: 0;
-    width: 48px;
-    height: 54px;
     content: "";
   }
   .advantage__item {
@@ -100,5 +98,32 @@
     line-height: 24px;
     text-align: left;
     letter-spacing: -0.5px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .advantage {
+    padding-top: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .advantage__list {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 30px;
+  }
+  .advantage__title {
+    margin-bottom: 156px;
+  }
+  .advantage__item {
+    padding-left: 10px;
+  }
+  .advantage__item-title {
+    text-align: center;
+  }
+  .advantage__item-text {
+    text-align: center;
+  }
+  .advantage__item::before {
+    top: -68px;
+    left: 148px
   }
 }

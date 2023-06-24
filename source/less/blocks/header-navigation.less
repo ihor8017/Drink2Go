@@ -4,6 +4,9 @@
   align-items: center;
   width: 100%;
 }
+.header-navigation__logo span {
+  display: none;
+}
 .header-navigation__icon-menu {
   display: flex;
   justify-content: space-between;
@@ -13,14 +16,17 @@
     padding: 10px;
   }
 }
-.header-navigation__login::after {
+.header-navigation__icon-link span {
+  display: none;
+}
+.header-navigation__login::before {
   display: block;
   width: 16px;
   height: 16px;
   content: "";
   background-image: url(../../img/user.svg);
 }
-.header-navigation__cart::after {
+.header-navigation__cart::before {
   display: block;
   width: 16px;
   height: 16px;
@@ -80,7 +86,6 @@
     z-index: 3;
   }
 }
-
 .header-navigation__item {
   text-align: center;
   background: @BaseWhite;
@@ -98,33 +103,59 @@
   background-color: @BaseSecondary;
 }
 @media (min-width: @tablet-width) {
-.header-navigation__list {
-  position: static;
-  display: flex;
-  width: max-content;
-}
-.header-navigation__item {
-  border-top: 0;
-}
-.header-navigation__item--current {
-  border-bottom: 2px solid @BasePrimary;
-}
-.header-navigation__link {
-  display: inline-block;
-  padding: 32px 20px 30px;
-}
-.header-navigation__toggle {
-  display: none;
-}
-.header-navigation__icon-menu {
-  display: flex;
-  justify-content: space-between;
-  margin-right: 0;
-  & a {
-    padding: 10px;
+  .header-navigation__list {
+    position: static;
+    display: flex;
+    width: max-content;
   }
-  & .header-navigation__icon-link {
-    padding: 32px 22px;
+  .header-navigation__item {
+    border-top: 0;
+  }
+  .header-navigation__link--current {
+    border-bottom: 2px solid @BasePrimary;
+  }
+  .header-navigation__link {
+    display: inline-block;
+    padding: 32px 20px 30px;
+  }
+  .header-navigation__toggle {
+    display: none;
+  }
+  .header-navigation__icon-menu {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 0;
+    & a {
+      padding: 10px;
+    }
+    & .header-navigation__icon-link {
+      padding: 32px 22px;
+    }
   }
 }
+@media (min-width: @desktop-width) {
+  .header-navigation__link {
+    margin-right: 20px;
+  }
+  .header-navigation__logo span {
+    display: inline-block;
+    font-size: 12px;
+    line-height: 16px;
+    width: 120px;
+  }
+  .header-navigation__icon-link span {
+    display: inline-block;
+  }
+  .header-navigation__icon-link::before {
+    display: inline-block;
+    position: relative;
+    top: 3px;
+  }
+  .header-navigation__icon-menu span{
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    letter-spacing: 0.24px;
+    text-transform: uppercase;
+  }
 }
