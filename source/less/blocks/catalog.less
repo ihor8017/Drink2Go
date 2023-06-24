@@ -65,13 +65,14 @@
 @media (min-width: @tablet-width) {
   .catalog {
     padding-top: 80px;
-    padding-bottom: 40px;
+    padding-bottom: 46px;
   }
   .catalog__title {
     font-size: 42px;
     line-height: 64px;
   }
   .catalog__filters {
+    margin-bottom: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 30px;
@@ -86,18 +87,28 @@
   .catalog__button {
     display: inline-block;
     width: min-content;
+    letter-spacing: -0.67px;
   }
   .catalog__button[type="submit"] {
-      margin-right: 20px;
+      margin-right: 18px;
   }
   .catalog__sort {
     justify-content: flex-end;
     margin-bottom: 30px;
+    letter-spacing: -0.1px;
+    & span {
+      margin-right: 3px;
+    }
+  }
+  .catalog__select {
+    letter-spacing: -0.5px;
   }
   .catalog__list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 30px;
-
+  }
+  .catalog__result {
+    margin-bottom: 48px;
   }
 }

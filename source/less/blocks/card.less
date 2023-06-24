@@ -30,7 +30,7 @@
   font-weight: 600;
   line-height: 32px;
 }
-.card__button{
+.card__button {
   position: relative;
   padding-left: 48px;
   padding-bottom: 6px;
@@ -51,11 +51,26 @@
     padding-left: 30px;
     padding-right: 30px;
     padding-bottom: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 0;
   }
   .card__title {
     margin-bottom: 10px;
     font-size: 24px;
     line-height: 36px;
+    text-transform: none;
+  }
+  .card__image {
+    margin-bottom: 30px;
+  }
+  .card__description {
+    letter-spacing: -0.5px;
+    margin-bottom: 20px;
+  }
+  .card__button {
+    padding-top: 7px;
+    letter-spacing: -0.3px;
+  }
+  .card__button::before {
+    top: 9px;
   }
 }
