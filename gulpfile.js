@@ -34,7 +34,7 @@ export function validateMarkup () {
 }
 
 export function processStyles () {
-  return gulp.src('source/less/*.less', { sourcemaps: isDevelopment })
+  return gulp.src('source/less/style.less', { sourcemaps: isDevelopment })
     .pipe(plumber())
     .pipe(less())
     .pipe(postcss([

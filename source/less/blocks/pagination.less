@@ -33,3 +33,25 @@
   background: none;
   color: @BaseBlack;
 }
+.pagination__item-text {
+  display: none;
+}
+@media (min-width: @tablet-width) {
+  .pagination__item-text {
+    display: inline;
+    font-weight: 400;
+  }
+  .pagination__item-icon {
+    display: none;
+  }
+  .pagination__list {
+    justify-content: flex-end;
+  }
+  .pagination__item {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+

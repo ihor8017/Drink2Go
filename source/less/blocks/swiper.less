@@ -38,9 +38,21 @@
 .swiper-button-next:active.swiper-button-next::after {
   background: linear-gradient(90deg,rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
 }
+@media (min-width: @tablet-width) {
+  .swiper-button-next::after, .swiper-button-prev::after {
+    left: -8px;
+    top: -398px;
+    height: 640px;
+    padding: 36px;
+    padding-top: 305px;
+    width: 80px;
+  }
+  .swiper-button-next::after {
+    left: -28px;
+  }
+}
 @media (min-width: @desktop-width) {
 .swiper-pagination {
   display: block;
 }
 }
-

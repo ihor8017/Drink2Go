@@ -7,6 +7,9 @@
   width: @mobile-width;
   margin: 0 auto;
 }
+.main-footer__map {
+  background-color: #7f7f7f;
+}
 .main-footer__content {
   padding-top: 40px;
 }
@@ -97,7 +100,22 @@
 }
 @media (min-width: @tablet-width) {
   .main-footer {
+    display: block;
     width: @tablet-width;
+  }
+  .main-footer__block-group {
+    padding-top: 40px;
+  }
+  .main-footer__item::before {
+    display: none;
+  }
+  .main-footer__content {
+    display: grid;
+    grid-template-columns: repeat(3, 223px);
+    column-gap: 30px;
+  }
+  .main-footer__developer {
+    border-top: none;
   }
 }
 
