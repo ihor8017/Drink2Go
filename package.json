@@ -54,6 +54,7 @@
   },
   "type": "module",
   "dependencies": {
+    "gulp-htmlmin": "^5.0.1",
     "swiper": "^9.4.1"
   }
 }
