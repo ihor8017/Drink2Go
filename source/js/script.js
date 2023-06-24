@@ -31,3 +31,15 @@ const swiper = new Swiper('.swiper', {
     el: '.swiper-pagination',
   },
 });
+var map = L.map('map').setView([59.968508, 30.317764], 17);
+L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+}).addTo(map);
+var greenIcon = L.icon({
+  iconUrl: '../img/map-pin.svg',
+
+  iconSize:     [38, 50], // size of the icon
+  iconAnchor:   [40, 15], // point of the icon which will correspond to marker's location
+});
+L.marker([59.968508, 30.317764], {icon: greenIcon}).addTo(map);
