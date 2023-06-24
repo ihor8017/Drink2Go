@@ -13,7 +13,7 @@
   box-sizing: border-box;
   width: 118px;
   padding: 6px 10px;
-  border: 2px solid #9070EC;
+  border: 2px solid @Primary-Lighter;
   border-radius: 4px;
   font-weight: 500;
   font-size: 16px;
@@ -27,7 +27,7 @@
   }
   &:focus {
     outline: none;
-    border-color: #593CAC;
+    border-color: @Primary-Darker;
   }
 }
 .range-input input::-webkit-outer-spin-button,
@@ -41,8 +41,14 @@
 @media (min-width: @tablet-width) {
   .range-input {
     padding-top: 35px;
+    margin-bottom: 13px;
   }
   .range-input input {
     width: 87px;
+  }
+}
+@media (min-width: @desktop-width) {
+  .range-input input {
+    width: 134px;
   }
 }

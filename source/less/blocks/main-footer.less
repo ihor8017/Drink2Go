@@ -13,6 +13,9 @@
 .main-footer__content {
   padding-top: 40px;
 }
+.main-footer__logo span {
+  display: none;
+}
 .main-footer__item {
   position: relative;
   margin-bottom: 27px;
@@ -48,6 +51,7 @@
   color: @BasePrimary;
 }
 .main-footer__adress {
+  margin: 0;
   position: relative;
   display: block;
   padding-left: 20px;
@@ -121,6 +125,9 @@
   }
   .main-footer__adress {
     letter-spacing: -0.6px;
+    & span {
+      display: block;
+    }
   }
   .main-footer__item {
     margin-bottom: 0;
@@ -129,5 +136,20 @@
 @media (min-width: @desktop-width) {
   .main-footer {
     width: @desktop-width;
+  }
+  .main-footer__block-group {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .main-footer__content {
+    grid-template-columns: repeat(3, 317px);
+    padding-top: 10px;
+  }
+  .main-footer__logo span {
+    display: block;
+    margin-bottom: 49px;
+  }
+  .main-footer__developer {
+    padding-top: 7px;
   }
 }

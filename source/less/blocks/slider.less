@@ -17,6 +17,7 @@
   line-height: 48px;
   letter-spacing: 0.5px;
   text-align: center;
+  text-transform: none;
 }
 .slider__description {
   margin: 0;
@@ -64,12 +65,26 @@
 }
 @media (min-width: @desktop-width) {
   .slider {
-    display: block;
-    padding-left: 30px;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding-left: 25px;
     padding-right: 80px;
     text-align: left;
+    height: max-content;
   }
   .slider__description {
     text-align: left;
+    letter-spacing: -0.2px;
+    margin-bottom: 30px;
+
+  }
+  .slider__title {
+    margin-left: 0px;
+  }
+  .slider__price-wrapper {
+    margin-top: 15px;
+  }
+  .slider__feature {
+    margin-top: 10px;
   }
 }
