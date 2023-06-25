@@ -2,32 +2,37 @@
   box-sizing: border-box;
   padding: 8px 20px;
   color: @BaseWhite;
-  background: #7859CF;
+  background: @BasePrimary;
   border-radius: 4px;
   border: none;
-  background-color: #7859CF;
+  background-color: @BasePrimary;
   text-align: center;
   font-size: 16px;
-  font-family: 'Montserrat', 'Arial', sans-serif;
+  font-family: "Montserrat", "Arial", sans-serif;
   line-height: 24px;
+
   &:hover,
   &:focus {
-    background-color: #9070EC;
+    background-color: @Primary-Lighter;
     color: @BaseWhite;
   }
+
   &:active {
-    background-color: #593CAC;
+    background-color: @Primary-Darker;
     color: @BaseWhite;
   }
+
   &:disabled {
     background-color: @BaseGray;
     color: @BaseWhite;
   }
 }
+
 .button--light {
   background-color: @BaseWhite;
   color: @BasePrimary;
+
   &:disabled {
-    background-color: #E2E2E2;
+    background-color: @DisabledColor;
   }
 }

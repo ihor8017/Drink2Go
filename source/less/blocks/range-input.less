@@ -3,11 +3,13 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 38px;
+
   & span {
     font-size: 20px;
     color: @BaseGray;
   }
 }
+
 .range-input input {
   display: inline-block;
   box-sizing: border-box;
@@ -19,34 +21,42 @@
   font-size: 16px;
   line-height: 24px;
   text-align: center;
+
   &::placeholder {
     color: @BaseGray;
   }
+
   &:hover {
     border-color: @BasePrimary;
   }
+
   &:focus {
     outline: none;
     border-color: @Primary-Darker;
   }
 }
+
 .range-input input::-webkit-outer-spin-button,
 .range-input input::-webkit-inner-spin-button {
   appearance: none;
   margin: 0;
 }
+
 .range-input input:disabled {
   color: @BaseGray;
 }
+
 @media (min-width: @tablet-width) {
   .range-input {
     padding-top: 35px;
     margin-bottom: 13px;
   }
+
   .range-input input {
     width: 87px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .range-input input {
     width: 134px;

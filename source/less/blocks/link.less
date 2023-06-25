@@ -5,32 +5,41 @@
   letter-spacing: 0.25px;
   text-transform: uppercase;
   color: @BaseBlack;
+
   &:hover,
   &:focus {
     color: @Primary-Lighter;
   }
+
   &:active {
     color: @Primary-Darker;
   }
 }
+
 .link--developer {
   display: flex;
+  flex-wrap: wrap;
   color: @BaseGray;
   text-transform: none;
   justify-content: center;
+
   & span {
     margin-right: 4px;
   }
 }
+
 .link__developer-logo {
   display: inline-block;
   line-height: 0;
+
   &:hover {
     color: @BasePrimary;
   }
+
   &:active {
     color: @Primary-Lighter;
   }
+
   &:focus {
     color: @BasePrimary;
   }

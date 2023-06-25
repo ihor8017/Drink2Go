@@ -1,6 +1,7 @@
 .swiper-pagination {
   display: none;
 }
+
 .swiper-pagination-bullet {
   width: 62px;
   height: 4px;
@@ -8,10 +9,13 @@
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background-color: @BaseWhite;
 }
+
 .swiper-pagination-bullet-active {
   background-color: @BasePrimary;
 }
-.swiper-button-next::after, .swiper-button-prev::after {
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
   position: absolute;
   box-sizing: border-box;
   left: -10px;
@@ -22,24 +26,30 @@
   width: 20px;
   font-size: 20px;
 }
+
 .swiper-button-next::after {
   left: 33px;
 }
+
 .swiper-button-next,
 .swiper-button-prev {
   width: 11px;
   height: 20px;
   padding: 8px 16px;
- color: @BasePrimary;
+  color: @BasePrimary;
 }
+
 .swiper-button-prev:active.swiper-button-prev::after {
-  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0.00) 100%);
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0.25) 0%, rgba(120, 89, 207, 0) 100%);
 }
+
 .swiper-button-next:active.swiper-button-next::after {
-  background: linear-gradient(90deg,rgba(120, 89, 207, 0.00) 0%, rgba(120, 89, 207, 0.25) 100%);
+  background: linear-gradient(90deg, rgba(120, 89, 207, 0) 0%, rgba(120, 89, 207, 0.25) 100%);
 }
+
 @media (min-width: @tablet-width) {
-  .swiper-button-next::after, .swiper-button-prev::after {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
     left: -8px;
     top: -398px;
     height: 640px;
@@ -47,26 +57,32 @@
     padding-top: 305px;
     width: 80px;
   }
+
   .swiper-button-next::after {
     left: -28px;
   }
 }
+
 @media (min-width: @desktop-width) {
-.swiper-pagination {
-  display: block;
-}
-.swiper-button-next::after, .swiper-button-prev::after {
-  left: -8px;
-  top: -337px;
-  height: 714px;
-  padding: 36px;
-  padding-top: 345px;
-  width: 80px;
-}
-.swiper-button-next::after {
-  left: -29px;
-}
-.swiper-pagination.swiper-pagination-horizontal {
-  bottom: 70px;
-}
+  .swiper-pagination {
+    display: block;
+  }
+
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    left: -8px;
+    top: -337px;
+    height: 714px;
+    padding: 36px;
+    padding-top: 345px;
+    width: 80px;
+  }
+
+  .swiper-button-next::after {
+    left: -29px;
+  }
+
+  .swiper-pagination.swiper-pagination-horizontal {
+    bottom: 70px;
+  }
 }

@@ -1,6 +1,7 @@
 .pagination {
   padding-bottom: 52px;
 }
+
 .pagination__list {
   display: flex;
   justify-content: space-between;
@@ -8,6 +9,7 @@
   padding: 0;
   list-style: none;
 }
+
 .pagination__link {
   padding: 8px 16px;
   background: @BaseWhite;
@@ -16,51 +18,63 @@
   font-size: 16px;
   line-height: 24px;
   color: @BasePrimary;
+
   &:hover,
   &:focus {
     color: @BaseWhite;
     background-color: @Primary-Lighter;
   }
+
   &:active {
     color: @BaseWhite;
     background-color: @BasePrimary;
   }
 }
+
 .pagination__link--active {
   background: none;
   color: @BaseBlack;
 }
+
 .pagination__item-text {
   display: none;
 }
+
 @media (min-width: @tablet-width) {
-  .pagination{
+  .pagination {
     padding-bottom: 50px;
   }
+
   .pagination__item-text {
     display: inline;
     font-style: regular;
     font-weight: 400;
     letter-spacing: -0.3;
   }
+
   .pagination__item-icon {
     display: none;
   }
+
   .pagination__list {
     justify-content: flex-end;
     margin-right: 5px;
   }
+
   .pagination__item {
     margin-right: 20px;
+
     &:last-child {
       margin-right: 0;
     }
   }
+
   .pagination__link {
     padding-top: 10px;
     padding-bottom: 10px;
   }
 }
+
 @media (min-width: @desktop-width) {
   .pagination {
     grid-column-start: 2;
@@ -68,4 +82,3 @@
     margin-right: 6px;
   }
 }
-

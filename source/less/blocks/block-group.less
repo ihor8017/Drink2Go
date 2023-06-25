@@ -1,21 +1,22 @@
 .block-group__header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
 }
+
 @media (min-width: @desktop-width) {
   .block-group {
     display: grid;
     grid-template-columns: 318px 1011px;
     column-gap: 30px;
   }
+
   .block-group__header {
     grid-column-start: 1;
     grid-column-end: 2;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
-
   }
 }
-

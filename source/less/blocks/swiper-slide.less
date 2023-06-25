@@ -5,41 +5,49 @@
   padding-top: 20px;
   align-items: center;
 }
+
 .swiper-slide::after {
   position: absolute;
   top: 0;
   width: 320px;
   height: 656px;
-  background-color:  #F3EBE1;
+  background-color: #f3ebe1;
   content: "";
   z-index: -1;
 }
+
 .swiper-slide--lavender::after {
-  background-color: #EAE6FC;
+  background-color: #eae6fc;
 }
+
 .swiper-slide--expresso::after {
-  background-color: #E5E6E8;
+  background-color: #e5e6e8;
 }
+
 .swiper-slide image {
   display: block;
   margin-bottom: 10px;
 }
+
 @media (min-width: @tablet-width) {
-.swiper-slide {
-  flex-direction: column-reverse;
-  padding-top: 60px;
+  .swiper-slide {
+    flex-direction: column-reverse;
+    padding-top: 60px;
+  }
+
+  .swiper-slide::after {
+    width: 768px;
+    height: 640px;
+  }
 }
-.swiper-slide::after {
-  width: 768px;
-  height: 640px;
-}
-}
+
 @media (min-width: @desktop-width) {
   .swiper-slide {
     flex-direction: row;
     padding-top: 19px;
     padding-bottom: 80px;
   }
+
   .swiper-slide::after {
     width: @desktop-width;
     height: 714px;
